@@ -1,0 +1,41 @@
+
+public class Program
+{
+    private static void Main(string[] args)
+    {
+        int numero1 = 0;
+        int numero2 = 1;
+        int numero3 = 0;
+
+        Console.WriteLine("Consulte se seu numero faz parte da sequencia de Fibonacci");
+        int Valor = Convert.ToInt32(Console.ReadLine());
+
+
+
+
+        while (Valor > numero3)
+        {
+            numero3 = numero1 + numero2;
+            numero1 = numero2;
+            numero2 = numero3;
+
+            if (Valor == 0 || Valor == 1)
+            {
+                Console.WriteLine("O número faz parte da sequencia de Fibonacci");
+            }
+            
+        }
+        if (Valor == numero3)
+        {
+            Console.WriteLine("O número faz parte da sequencia de Fibonacci");
+        }
+        else
+        {
+            Console.WriteLine("O número não faz parte da sequencia de Fibonacci");
+        }
+
+
+    }
+
+}
+  
