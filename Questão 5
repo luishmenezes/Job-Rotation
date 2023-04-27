@@ -1,0 +1,5 @@
+string s = "Frase de teste, Job Rotation";
+
+
+Console.WriteLine(new string((new Stack<char>(s)).ToArray()));
+
